@@ -22,6 +22,12 @@ namespace FootprintsLib
         public ProjFields ProjectInfo { get; set; }
         public Mail MailInfo { get; set; }
 
+        /// <summary>
+        /// Create a Footprints Ticket
+        /// </summary>
+        /// <param name="url">URL to the Footprints Web API</param>
+        /// <param name="username">Footprints username of user with System Admin rights</param>
+        /// <param name="password">Footprints User Password</param>
         public FPTicket(string url, string username, string password)
         {
             Url = url;
